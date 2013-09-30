@@ -79,7 +79,48 @@
 		/*------------------------------------------------------------------------------------------------*/
 
 		public static function fileExists($code){
-			return is_file( Languages::local()->getFileName($code) ) ? 1 : 0;
+			return is_file( Languages::local()->getFileName( $code ) ) ? 1 : 0;
+		}
+
+		/**
+		 * Get options for given language. Useful to build a Select widget.
+		 *
+		 * @param array             $selected
+		 * @param string (optional) $lang
+		 *
+		 * @return array
+		 */
+		public static function findOptions($selected = array(), $lang = null){
+			$native = Languages::all()->listAll( 'name' );
+
+			if( $lang === null ){
+				$lang = Lang::get();
+			}
+
+			// try to get languages in author language
+			$local = Languages::local()->listAll( $lang );
+
+			// if languages not found, use english ones
+			if( $local === false ){
+				$local = Languages::local()->listAll();
+			}
+
+			$options = array();
+
+			foreach($native as $code => $info){
+				$options[] = array(
+					$code,
+					in_array( $code, $selected ),
+					sprintf(
+						"[%s] %s%s",
+						strtoupper( $code ),
+						isset($local[$code]) ? $local[$code].' || ' : '',
+						$info['name']
+					),
+				);
+			}
+
+			return $options;
 		}
 
 	}

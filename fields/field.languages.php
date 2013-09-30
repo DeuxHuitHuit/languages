@@ -6,7 +6,7 @@
 
 
 
-	require_once EXTENSIONS.'/languages/lib/class.languages.php';
+	require_once EXTENSIONS.'/languages/extension.driver.php';
 
 
 
@@ -61,7 +61,7 @@
 
 			$available_codes = $this->get( 'available_codes' );
 
-			$options = $this->findOptions( $available_codes, 'en' );
+			$options = Extension_Languages::findOptions( $available_codes, 'en' );
 
 			$label = Widget::Label( __( 'Available languages' ) );
 			$label->appendChild(
@@ -122,7 +122,7 @@
 				$selected = array_map( 'trim', explode( ',', $selected ) );
 			}
 
-			$options = $this->findOptions( $selected );
+			$options = Extension_Languages::findOptions( $selected );
 
 			$available_codes = $this->get( 'available_codes' );
 
@@ -176,7 +176,7 @@
 			if( !empty($not_allowed) ){
 				$msg = array();
 
-				$options = $this->findOptions();
+				$options = Extension_Languages::findOptions();
 
 				foreach($not_allowed as $code){
 					foreach($options as $details){
@@ -226,7 +226,7 @@
 		public function prepareTableValue($data, XMLElement $link = null, $entry_id = null){
 			$selected = array_map( 'trim', explode( ',', $data['value'] ) );
 
-			$options = $this->findOptions();
+			$options = Extension_Languages::findOptions();
 			$value   = array();
 
 			foreach($selected as $code){
@@ -248,47 +248,6 @@
 		/*------------------------------------------------------------------------------------------------*/
 		/*  Internal  */
 		/*------------------------------------------------------------------------------------------------*/
-
-		/**
-		 * Get options for given language
-		 *
-		 * @param array $selected
-		 * @param string (optional) $lang
-		 *
-		 * @return array
-		 */
-		protected function findOptions($selected = array(), $lang = null){
-			$native = Languages::all()->listAll( 'name' );
-
-			if( $lang === null ){
-				$lang = Lang::get();
-			}
-
-			// try to get languages in author language
-			$local = Languages::local()->listAll( $lang );
-
-			// if languages not found, use english ones
-			if( $local === false ){
-				$local = Languages::local()->listAll( 'en' );
-			}
-
-			$options = array();
-
-			foreach($native as $code => $info){
-				$options[] = array(
-					$code,
-					in_array( $code, $selected ),
-					sprintf(
-						"[%s] %s%s",
-						strtoupper( $code ),
-						isset($local[$code]) ? $local[$code].' || ' : '',
-						$info['name']
-					),
-				);
-			}
-
-			return $options;
-		}
 
 		public function appendFieldSchema(XMLElement $f){
 		}
