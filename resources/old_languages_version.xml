@@ -1,0 +1,714 @@
+<languages>
+	<language code="ab">
+		<name code="ab">аҧсуа бызшәа</name>
+		<name code="en">Abkhazian</name>
+	</language>
+	<language code="af">
+		<name code="af">Afrikaans</name>
+		<name code="en">Afrikaans</name>
+	</language>
+	<language code="sq">
+		<name code="sq">shqip</name>
+		<name code="en">Albanian</name>
+	</language>
+	<language code="am">
+		<name code="am">አማርኛ</name>
+		<name code="en">Amharic</name>
+	</language>
+	<language code="ar-dz">
+		<name code="ar-dz">العربية (Algeria)</name>
+		<name code="en">Arabic</name>
+	</language>
+	<language code="ar-bh">
+		<name code="ar-bh">العربية (Bahrain)</name>
+		<name code="en">Arabic</name>
+	</language>
+	<language code="ar-eg">
+		<name code="ar-eg">العربية (Egypt)</name>
+		<name code="en">Arabic</name>
+	</language>
+	<language code="ar-iq">
+		<name code="ar-iq">العربية (Iraq)</name>
+		<name code="en">Arabic</name>
+	</language>
+	<language code="ar-jo">
+		<name code="ar-jo">العربية (Jordan)</name>
+		<name code="en">Arabic</name>
+	</language>
+	<language code="ar-kw">
+		<name code="ar-kw">العربية (Kuwait)</name>
+		<name code="en">Arabic</name>
+	</language>
+	<language code="ar-lb">
+		<name code="ar-lb">العربية (Lebanon)</name>
+		<name code="en">Arabic</name>
+	</language>
+	<language code="ar-ly">
+		<name code="ar-ly">العربية (Libya)</name>
+		<name code="en">Arabic</name>
+	</language>
+	<language code="ar-ma">
+		<name code="ar-ma">العربية (Morocco)</name>
+		<name code="en">Arabic</name>
+	</language>
+	<language code="ar-om">
+		<name code="ar-om">العربية (Oman)</name>
+		<name code="en">Arabic</name>
+	</language>
+	<language code="ar-qa">
+		<name code="ar-qa">العربية (Qatar)</name>
+		<name code="en">Arabic</name>
+	</language>
+	<language code="ar-sa">
+		<name code="ar-sa">العربية (Saudi Arabia)</name>
+		<name code="en">Arabic</name>
+	</language>
+	<language code="ar-sy">
+		<name code="ar-sy">العربية (Syria)</name>
+		<name code="en">Arabic</name>
+	</language>
+	<language code="ar-tn">
+		<name code="ar-tn">العربية (Tunisia)</name>
+		<name code="en">Arabic</name>
+	</language>
+	<language code="ar-ae">
+		<name code="ar-ae">العربية (U.A.E.)</name>
+		<name code="en">Arabic</name>
+	</language>
+	<language code="ar-ye">
+		<name code="ar-ye">العربية (Yemen)</name>
+		<name code="en">Arabic</name>
+	</language>
+	<language code="ar">
+		<name code="ar">العربية</name>
+		<name code="en">Arabic</name>
+	</language>
+	<language code="hy">
+		<name code="hy">Հայերեն</name>
+		<name code="en">Armenian</name>
+	</language>
+	<language code="as">
+		<name code="as">অসমীয়া</name>
+		<name code="en">Assamese</name>
+	</language>
+	<language code="az">
+		<name code="az">azərbaycan</name>
+		<name code="en">Azeri</name>
+	</language>
+	<language code="eu">
+		<name code="eu">euskera</name>
+		<name code="en">Basque</name>
+	</language>
+	<language code="be">
+		<name code="be">Беларуская</name>
+		<name code="en">Belarusian</name>
+	</language>
+	<language code="bn">
+		<name code="bn">বাংলা</name>
+		<name code="en">Bengali</name>
+	</language>
+	<language code="bg">
+		<name code="bg">Български</name>
+		<name code="en">Bulgarian</name>
+	</language>
+	<language code="ca">
+		<name code="ca">Català</name>
+		<name code="en">Catalan</name>
+	</language>
+	<language code="zh-cn">
+		<name code="zh-cn">简体中文 (China)</name>
+		<name code="en">Chinese simplified script</name>
+	</language>
+	<language code="zh-hk">
+		<name code="zh-hk">繁體中文 (Hong Kong SAR)</name>
+		<name code="en">Chinese traditional script</name>
+	</language>
+	<language code="zh-mo">
+		<name code="zh-mo">繁體中文 (Macau SAR)</name>
+		<name code="en">Chinese traditional script</name>
+	</language>
+	<language code="zh-sg">
+		<name code="zh-sg">简体中文 (Singapore)</name>
+		<name code="en">Chinese simplified script</name>
+	</language>
+	<language code="zh-tw">
+		<name code="zh-tw">繁體中文 (Taiwan)</name>
+		<name code="en">Chinese traditional script</name>
+	</language>
+	<language code="zh">
+		<name code="zh">中文</name>
+		<name code="en">Chinese</name>
+	</language>
+	<language code="hr">
+		<name code="hr">Hrvatski</name>
+		<name code="en">Croatian</name>
+	</language>
+	<language code="cs">
+		<name code="cs">čeština</name>
+		<name code="en">Czech</name>
+	</language>
+	<language code="da">
+		<name code="da">Dansk</name>
+		<name code="en">Danish</name>
+	</language>
+	<language code="dv">
+		<name code="dv">ދިވެހި</name>
+		<name code="en">Divehi</name>
+	</language>
+	<language code="nl-be">
+		<name code="nl-be">Nederlands (Belgium)</name>
+		<name code="en">Dutch</name>
+	</language>
+	<language code="nl">
+		<name code="nl">Nederlands (Netherlands)</name>
+		<name code="en">Dutch</name>
+	</language>
+	<language code="en-au">
+		<name code="en-au">English (Australia)</name>
+		<name code="en">English</name>
+	</language>
+	<language code="en-bz">
+		<name code="en-bz">English (Belize)</name>
+		<name code="en">English</name>
+	</language>
+	<language code="en-ca">
+		<name code="en-ca">English (Canada)</name>
+		<name code="en">English</name>
+	</language>
+	<language code="en-ie">
+		<name code="en-ie">English (Ireland)</name>
+		<name code="en">English</name>
+	</language>
+	<language code="en-jm">
+		<name code="en-jm">English (Jamaica)</name>
+		<name code="en">English</name>
+	</language>
+	<language code="en-nz">
+		<name code="en-nz">English (New Zealand)</name>
+		<name code="en">English</name>
+	</language>
+	<language code="en-ph">
+		<name code="en-ph">English (Philippines)</name>
+		<name code="en">English</name>
+	</language>
+	<language code="en-za">
+		<name code="en-za">English (South Africa)</name>
+		<name code="en">English</name>
+	</language>
+	<language code="en-tt">
+		<name code="en-tt">English (Trinidad)</name>
+		<name code="en">English</name>
+	</language>
+	<language code="en-gb">
+		<name code="en-gb">English (United Kingdom)</name>
+		<name code="en">English</name>
+	</language>
+	<language code="en-us">
+		<name code="en-us">English (United States)</name>
+		<name code="en">English</name>
+	</language>
+	<language code="en-zw">
+		<name code="en-zw">English (Zimbabwe)</name>
+		<name code="en">English</name>
+	</language>
+	<language code="en">
+		<name code="en">English</name>
+		<name code="en">English</name>
+	</language>
+	<language code="ee">
+		<name code="ee">Ɛʋɛ</name>
+		<name code="en">Ewe</name>
+	</language>
+	<language code="et">
+		<name code="et">Eesti</name>
+		<name code="en">Estonian</name>
+	</language>
+	<language code="fo">
+		<name code="fo">føroyskt</name>
+		<name code="en">Faeroese</name>
+	</language>
+	<language code="fa">
+		<name code="fa">فارسی</name>
+		<name code="en">Farsi</name>
+	</language>
+	<language code="fi">
+		<name code="fi">suomi</name>
+		<name code="en">Finnish</name>
+	</language>
+	<language code="fr-be">
+		<name code="fr-be">Français (Belgium)</name>
+		<name code="en">French (Belgium)</name>
+	</language>
+	<language code="fr-ca">
+		<name code="fr-ca">Français canadien</name>
+		<name code="en">French (Canada)</name>
+	</language>
+	<language code="fr-lu">
+		<name code="fr-lu">Français (Luxembourg)</name>
+		<name code="en">French</name>
+	</language>
+	<language code="fr-mc">
+		<name code="fr-mc">Français (Monaco)</name>
+		<name code="en">French</name>
+	</language>
+	<language code="fr-ch">
+		<name code="fr-ch">Français (Switzerland)</name>
+		<name code="en">French</name>
+	</language>
+	<language code="fr">
+		<name code="fr">Français</name>
+		<name code="en">French</name>
+	</language>
+	<language code="ff">
+		<name code="ff">Fulfulde, Pulaar, Pular</name>
+		<name code="en">Fula, Fulah, Fulani</name>
+	</language>
+	<language code="gl">
+		<name code="gl">Galego</name>
+		<name code="en">Galician</name>
+	</language>
+	<language code="gd">
+		<name code="gd">Gàidhlig</name>
+		<name code="en">Gaelic (Scottish)</name>
+	</language>
+	<language code="ga">
+		<name code="ga">Gaeilge</name>
+		<name code="en">Gaelic (Irish)</name>
+	</language>
+	<language code="gv">
+		<name code="gv">Gaelg</name>
+		<name code="en">Gaelic (Manx) (Isle of Man)</name>
+	</language>
+	<language code="ka">
+		<name code="ka">ქართული ენა</name>
+		<name code="en">Georgian</name>
+	</language>
+	<language code="de-at">
+		<name code="de-at">Deutsch (Austria)</name>
+		<name code="en">German</name>
+	</language>
+	<language code="de-li">
+		<name code="de-li">Deutsch (Liechtenstein)</name>
+		<name code="en">German</name>
+	</language>
+	<language code="de-lu">
+		<name code="de-lu">Deutsch (Luxembourg)</name>
+		<name code="en">German</name>
+	</language>
+	<language code="de-ch">
+		<name code="de-ch">Deutsch (Switzerland)</name>
+		<name code="en">German</name>
+	</language>
+	<language code="de">
+		<name code="de">Deutsch</name>
+		<name code="en">German</name>
+	</language>
+	<language code="el">
+		<name code="el">Ελληνικά</name>
+		<name code="en">Greek</name>
+	</language>
+	<language code="gu">
+		<name code="gu">ગુજરાતી</name>
+		<name code="en">Gujarati</name>
+	</language>
+	<language code="ha">
+		<name code="ha">هَوْسَ</name>
+		<name code="en">Hausa</name>
+	</language>
+	<language code="he">
+		<name code="he">עברית</name>
+		<name code="en">Hebrew</name>
+	</language>
+	<language code="hi">
+		<name code="hi">हिंदी</name>
+		<name code="en">Hindi</name>
+	</language>
+	<language code="hu">
+		<name code="hu">Magyar</name>
+		<name code="en">Hungarian</name>
+	</language>
+	<language code="is">
+		<name code="is">Íslenska</name>
+		<name code="en">Icelandic</name>
+	</language>
+	<language code="id">
+		<name code="id">Bahasa Indonesia</name>
+		<name code="en">Indonesian</name>
+	</language>
+	<language code="it-ch">
+		<name code="it-ch">italiano (Switzerland)</name>
+		<name code="en">Italian</name>
+	</language>
+	<language code="it">
+		<name code="it">italiano</name>
+		<name code="en">Italian</name>
+	</language>
+	<language code="ja">
+		<name code="ja">日本語</name>
+		<name code="en">Japanese</name>
+	</language>
+	<language code="kn">
+		<name code="kn">ಕನ್ನಡ</name>
+		<name code="en">Kannada</name>
+	</language>
+	<language code="kk">
+		<name code="kk">Қазақ</name>
+		<name code="en">Kazakh</name>
+	</language>
+	<language code="rw">
+		<name code="rw">Kinyarwanda</name>
+		<name code="en">Kinyarwanda</name>
+	</language>
+	<language code="kok">
+		<name code="kok">कोंकणी</name>
+		<name code="en">Konkani</name>
+	</language>
+	<language code="ko">
+		<name code="ko">한국어/조선말</name>
+		<name code="en">Korean</name>
+	</language>
+	<language code="kz">
+		<name code="kz">Кыргыз</name>
+		<name code="en">Kyrgyz</name>
+	</language>
+	<language code="lv">
+		<name code="lv">Latviešu</name>
+		<name code="en">Latvian</name>
+	</language>
+	<language code="lt">
+		<name code="lt">Lietuviškai</name>
+		<name code="en">Lithuanian</name>
+	</language>
+	<language code="luo">
+		<name code="luo">Dholuo</name>
+		<name code="en">Luo</name>
+	</language>
+	<language code="ms">
+		<name code="ms">Bahasa Melayu</name>
+		<name code="en">Malay</name>
+	</language>
+	<language code="mk">
+		<name code="mk">Македонски</name>
+		<name code="en">Macedonian</name>
+	</language>
+	<language code="ml">
+		<name code="ml">മലയാളം</name>
+		<name code="en">Malayalam</name>
+	</language>
+	<language code="mt">
+		<name code="mt">Malti</name>
+		<name code="en">Maltese</name>
+	</language>
+	<language code="mr">
+		<name code="mr">मराठी</name>
+		<name code="en">Marathi</name>
+	</language>
+	<language code="mn">
+		<name code="mn">Монгол</name>
+		<name code="en">Mongolian (Cyrillic)</name>
+	</language>
+	<language code="ne">
+		<name code="ne">नेपाली</name>
+		<name code="en">Nepali</name>
+	</language>
+	<language code="nb-no">
+		<name code="nb-no">Norsk bokmål</name>
+		<name code="en">Norwegian Bokmål</name>
+	</language>
+	<language code="nb">
+		<name code="nb">Norsk bokmål</name>
+		<name code="en">Norwegian Bokmål</name>
+	</language>
+	<language code="nn-no">
+		<name code="nn-no">Norsk nynorsk</name>
+		<name code="en">Norwegian Nynorsk</name>
+	</language>
+	<language code="nn">
+		<name code="nn">Norsk nynorsk</name>
+		<name code="en">Norwegian Nynorsk</name>
+	</language>
+	<language code="no">
+		<name code="no">Norsk</name>
+		<name code="en">Norwegian</name>
+	</language>
+	<language code="or">
+		<name code="or">ଓଡ଼ିଆ</name>
+		<name code="en">Oriya</name>
+	</language>
+	<language code="ps">
+		<name code="ps">پښتو</name>
+		<name code="en">Pashto</name>
+	</language>
+	<language code="pl">
+		<name code="pl">polski</name>
+		<name code="en">Polish</name>
+	</language>
+	<language code="pt-br">
+		<name code="pt-br">português brasileiro</name>
+		<name code="en">Portuguese (Brasil)</name>
+	</language>
+	<language code="pt">
+		<name code="pt">português</name>
+		<name code="en">Portuguese</name>
+	</language>
+	<language code="pa">
+		<name code="pa">پنجابی/ਪੰਜਾਬੀ</name>
+		<name code="en">Punjabi</name>
+	</language>
+	<language code="qu">
+		<name code="qu">Runa Simi/Kichwa</name>
+		<name code="en">Quechua</name>
+	</language>
+	<language code="rm">
+		<name code="rm">Romansch</name>
+		<name code="en">Rhaeto-Romanic</name>
+	</language>
+	<language code="ro-md">
+		<name code="ro-md">Română (Moldova)</name>
+		<name code="en">Romanian</name>
+	</language>
+	<language code="ro">
+		<name code="ro">Română</name>
+		<name code="en">Romanian</name>
+	</language>
+	<language code="rn">
+		<name code="rn">kiRundi</name>
+		<name code="en">Rundi</name>
+	</language>
+	<language code="ru-md">
+		<name code="ru-md">Pyccĸий (Moldova)</name>
+		<name code="en">Russian</name>
+	</language>
+	<language code="ru">
+		<name code="ru">Pyccĸий</name>
+		<name code="en">Russian</name>
+	</language>
+	<language code="sg">
+		<name code="sg">yângâ tî sängö</name>
+		<name code="en">Sango</name>
+	</language>
+	<language code="sa">
+		<name code="sa">संस्कृतम्</name>
+		<name code="en">Sanskrit</name>
+	</language>
+	<language code="sc">
+		<name code="sc">sardu</name>
+		<name code="en">Sardinian</name>
+	</language>
+	<language code="sr">
+		<name code="sr">Srpski/српски</name>
+		<name code="en">Serbian</name>
+	</language>
+	<language code="sn">
+		<name code="sn">chiShona</name>
+		<name code="en">Shona</name>
+	</language>
+	<language code="ii">
+		<name code="ii">ꆇꉙ</name>
+		<name code="en">Sichuan Yi</name>
+	</language>
+	<language code="si">
+		<name code="si">සිංහල</name>
+		<name code="en">Sinhalese, Sinhala</name>
+	</language>
+	<language code="sk">
+		<name code="sk">Slovenčina</name>
+		<name code="en">Slovak</name>
+	</language>
+	<language code="ls">
+		<name code="ls">Slovenščina</name>
+		<name code="en">Slovenian</name>
+	</language>
+	<language code="so">
+		<name code="so">Soomaaliga/af Soomaali</name>
+		<name code="en">Somali</name>
+	</language>
+	<language code="st">
+		<name code="st">Sesotho</name>
+		<name code="en">Sotho, Sutu</name>
+	</language>
+	<language code="es-ar">
+		<name code="es-ar">Español (Argentina)</name>
+		<name code="en">Spanish</name>
+	</language>
+	<language code="es-bo">
+		<name code="es-bo">Español (Bolivia)</name>
+		<name code="en">Spanish</name>
+	</language>
+	<language code="es-cl">
+		<name code="es-cl">Español (Chile)</name>
+		<name code="en">Spanish</name>
+	</language>
+	<language code="es-co">
+		<name code="es-co">Español (Colombia)</name>
+		<name code="en">Spanish</name>
+	</language>
+	<language code="es-cr">
+		<name code="es-cr">Español (Costa Rica)</name>
+		<name code="en">Spanish</name>
+	</language>
+	<language code="es-do">
+		<name code="es-do">Español (Dominican Republic)</name>
+		<name code="en">Spanish</name>
+	</language>
+	<language code="es-ec">
+		<name code="es-ec">Español (Ecuador)</name>
+		<name code="en">Spanish</name>
+	</language>
+	<language code="es-sv">
+		<name code="es-sv">Español (El Salvador)</name>
+		<name code="en">Spanish</name>
+	</language>
+	<language code="es-gt">
+		<name code="es-gt">Español (Guatemala)</name>
+		<name code="en">Spanish</name>
+	</language>
+	<language code="es-hn">
+		<name code="es-hn">Español (Honduras)</name>
+		<name code="en">Spanish</name>
+	</language>
+	<language code="es-mx">
+		<name code="es-mx">Español (Mexico)</name>
+		<name code="en">Spanish</name>
+	</language>
+	<language code="es-ni">
+		<name code="es-ni">Español (Nicaragua)</name>
+		<name code="en">Spanish</name>
+	</language>
+	<language code="es-pa">
+		<name code="es-pa">Español (Panama)</name>
+		<name code="en">Spanish</name>
+	</language>
+	<language code="es-py">
+		<name code="es-py">Español (Paraguay)</name>
+		<name code="en">Spanish</name>
+	</language>
+	<language code="es-pe">
+		<name code="es-pe">Español (Peru)</name>
+		<name code="en">Spanish</name>
+	</language>
+	<language code="es-pr">
+		<name code="es-pr">Español (Puerto Rico)</name>
+		<name code="en">Spanish</name>
+	</language>
+	<language code="es-us">
+		<name code="es-us">Español (United States)</name>
+		<name code="en">Spanish</name>
+	</language>
+	<language code="es-uy">
+		<name code="es-uy">Español (Uruguay)</name>
+		<name code="en">Spanish</name>
+	</language>
+	<language code="es-ve">
+		<name code="es-ve">Español (Venezuela)</name>
+		<name code="en">Spanish</name>
+	</language>
+	<language code="es">
+		<name code="es">Español</name>
+		<name code="en">Spanish</name>
+	</language>
+	<language code="sw">
+		<name code="sw">kiswahili</name>
+		<name code="en">Swahili</name>
+	</language>
+	<language code="sv-fi">
+		<name code="sv-fi">svenska (Finland)</name>
+		<name code="en">Swedish</name>
+	</language>
+	<language code="sv">
+		<name code="sv">svenska</name>
+		<name code="en">Swedish</name>
+	</language>
+	<language code="syr">
+		<name code="syr">ܣܘܪܝܝܐ</name>
+		<name code="en">Syriac</name>
+	</language>
+	<language code="ta">
+		<name code="ta">தமிழ்</name>
+		<name code="en">Tamil</name>
+	</language>
+	<language code="tt">
+		<name code="tt">татарча/تاتارچا</name>
+		<name code="en">Tatar</name>
+	</language>
+	<language code="te">
+		<name code="te">తెలుగు</name>
+		<name code="en">Telugu</name>
+	</language>
+	<language code="th">
+		<name code="th">ภาษาไทย</name>
+		<name code="en">Thai</name>
+	</language>
+	<language code="ti">
+		<name code="ti">ትግርኛ</name>
+		<name code="en">Tigrinya</name>
+	</language>
+	<language code="ts">
+		<name code="ts">Xitsonga</name>
+		<name code="en">Tsonga</name>
+	</language>
+	<language code="tn">
+		<name code="tn">Setswana</name>
+		<name code="en">Tswana</name>
+	</language>
+	<language code="tr">
+		<name code="tr">Türkçe</name>
+		<name code="en">Turkish</name>
+	</language>
+	<language code="tk">
+		<name code="tk">Түркмен</name>
+		<name code="en">Turkmen</name>
+	</language>
+	<language code="ug">
+		<name code="ug">ئۇيغۇرچە‎/Uyƣurqə/Уйғурчә</name>
+		<name code="en">Uighur, Uyghur</name>
+	</language>
+	<language code="uk">
+		<name code="uk">Українська</name>
+		<name code="en">Ukrainian</name>
+	</language>
+	<language code="ur">
+		<name code="ur">اردو</name>
+		<name code="en">Urdu</name>
+	</language>
+	<language code="uz">
+		<name code="uz">o'zbek</name>
+		<name code="en">Uzbek</name>
+	</language>
+	<language code="ve">
+		<name code="ve">Tshivenḓa</name>
+		<name code="en">Venda</name>
+	</language>
+	<language code="vi">
+		<name code="vi">Tiếng Việt</name>
+		<name code="en">Vietnamese</name>
+	</language>
+	<language code="wa">
+		<name code="wa">walon</name>
+		<name code="en">Waloon</name>
+	</language>
+	<language code="cy">
+		<name code="cy">Cymraeg</name>
+		<name code="en">Welsh</name>
+	</language>
+	<language code="wo">
+		<name code="wo">Wolof</name>
+		<name code="en">Wolof</name>
+	</language>
+	<language code="xh">
+		<name code="xh">isiXhosa</name>
+		<name code="en">Xhosa</name>
+	</language>
+	<language code="yi">
+		<name code="yi">ייִדיש</name>
+		<name code="en">Yiddish</name>
+	</language>
+	<language code="yo">
+		<name code="yo">Yorùbá</name>
+		<name code="en">Yoruba</name>
+	</language>
+	<language code="zu">
+		<name code="zu">isiZulu</name>
+		<name code="en">Zulu</name>
+	</language>
+</languages>

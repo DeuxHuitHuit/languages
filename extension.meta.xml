@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="languages" status="released" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>Languages</name>
+
+	<description>Offers languages support.</description>
+
+	<repo type="github">https://github.com/vlad-ghita/url_field</repo>
+
+	<types>
+		<type>Field</type>
+	</types>
+
+	<dependencies>
+		<dependency version="1.5">exsl_function_manager</dependency>
+	</dependencies>
+
+	<authors>
+		<author>
+			<name github="vlad-ghita" symphony="vladG">Vlad Ghita</name>
+			<email>vlad_micutul@yahoo.com</email>
+			<website>http://www.xanderadvertising.com</website>
+		</author>
+	</authors>
+
+	<releases>
+		<release version="1.0" date="2013-09-30" min="2.3.x"><![CDATA[
+			* First release.
+		]]></release>
+	</releases>
+</extension>
