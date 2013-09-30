@@ -6,7 +6,7 @@
 
 
 
-	require_once EXTENSIONS.'/languages/lib/class.langman.php';
+	require_once EXTENSIONS.'/languages/lib/class.languages.php';
 
 
 
@@ -79,7 +79,7 @@
 		/*------------------------------------------------------------------------------------------------*/
 
 		public static function fileExists($code){
-			return is_file( LangMan::local()->getFileName($code) ) ? 1 : 0;
+			return is_file( Languages::local()->getFileName($code) ) ? 1 : 0;
 		}
 
 	}

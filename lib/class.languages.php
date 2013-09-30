@@ -1,6 +1,6 @@
 <?php
 
-	Final Class LangMan
+	Final Class Languages
 	{
 
 		private $objects = array();
@@ -8,8 +8,8 @@
 		private static $instance = null;
 
 		private static function instance(){
-			if( !self::$instance instanceof LangMan ){
-				self::$instance = new LangMan;
+			if( !self::$instance instanceof Languages ){
+				self::$instance = new Languages;
 			}
 
 			return self::$instance;

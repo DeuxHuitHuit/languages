@@ -6,7 +6,7 @@
 
 
 
-	require_once EXTENSIONS.'/languages/lib/class.langman.php';
+	require_once EXTENSIONS.'/languages/lib/class.languages.php';
 
 
 
@@ -258,18 +258,18 @@
 		 * @return array
 		 */
 		protected function findOptions($selected = array(), $lang = null){
-			$native = LangMan::all()->listAll( 'name' );
+			$native = Languages::all()->listAll( 'name' );
 
 			if( $lang === null ){
 				$lang = Lang::get();
 			}
 
 			// try to get languages in author language
-			$local = LangMan::local()->listAll( $lang );
+			$local = Languages::local()->listAll( $lang );
 
 			// if languages not found, use english ones
 			if( $local === false ){
-				$local = LangMan::local()->listAll( 'en' );
+				$local = Languages::local()->listAll( 'en' );
 			}
 
 			$options = array();
