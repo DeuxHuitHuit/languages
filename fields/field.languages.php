@@ -64,7 +64,7 @@
 
 			$available_codes = $this->get('available_codes');
 
-			$options = Extension_Languages::findOptions($available_codes, 'en');
+			$options = Extension_Languages::findOptions($available_codes);
 
 			$label = Widget::Label(__('Available languages'));
 			$label->appendChild(

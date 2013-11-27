@@ -79,15 +79,23 @@
 		}
 
 		/**
-		 * Get options for given language. Useful to build a Select widget.
+		 * Get language options for in desired language. Useful to build a Select widget.
 		 *
-		 * @param array  $selected - languages to mark as selected
-		 * @param string $lang     (optional)
+		 * @param array|string|int $selected - An array of language codes to mark as selected
+		 * @param array            $pool     (optional) - An array of language codes to be displayed. Leave null to show all.
+		 * @param string           $lang     (optional) - Get language names for this language.
 		 *
 		 * @return array
 		 */
-		public static function findOptions($selected = array(), $lang = null) {
+		public static function findOptions($selected = array(), $pool = null, $lang = null) {
+			if (!is_array($selected)) {
+				$selected = array($selected);
+			}
+
 			$native = Languages::all()->listAll('name');
+			if (is_array($pool)) {
+				$native = array_intersect_key($native, array_flip($pool));
+			}
 
 			if ($lang === null) {
 				$lang = Lang::get();
