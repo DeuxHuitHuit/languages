@@ -2,12 +2,9 @@
 
 
 
-	require_once EXTENSIONS.'/languages/lib/class.langfile.php';
+	require_once EXTENSIONS . '/languages/lib/class.langfile.php';
 
-
-
-	Final Class LangFileLocal extends LangFile
-	{
+	Final Class LangFileLocal extends LangFile {
 
 		private $cache = array();
 
@@ -18,23 +15,23 @@
 		 *
 		 * @return array - resulting languages
 		 */
-		public function listAll($code = 'en'){
-			if( !isset($this->cache[$code]) ){
+		public function listAll($code = 'en') {
+			if (!isset($this->cache[$code])) {
 				$result = array();
 
 				$file = $this->getFileName($code);
 
-				if( !is_file($file) || !is_readable($file) ){
+				if (!is_file($file) || !is_readable($file)) {
 					return false;
 				}
 
 				$doc = new DOMDocument();
-				$doc->load( $file );
+				$doc->load($file);
 				$xPath = new DOMXPath($doc);
 
-				foreach($xPath->query( "/languages/lang" ) as $lang){
+				foreach ($xPath->query("/languages/lang") as $lang) {
 					/** @var $lang DOMElement */
-					$result[$lang->getAttribute( 'code' )] = $lang->nodeValue;
+					$result[$lang->getAttribute('code')] = $lang->nodeValue;
 				}
 
 				$this->cache[$code] = $result;
@@ -43,8 +40,7 @@
 			return $this->cache[$code];
 		}
 
-		public function getFileName($code){
-			return EXTENSIONS."/languages/resources/languages/languages.$code.xml";
+		public function getFileName($code) {
+			return EXTENSIONS . "/languages/resources/languages/languages.$code.xml";
 		}
-
 	}

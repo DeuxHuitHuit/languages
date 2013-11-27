@@ -2,12 +2,9 @@
 
 
 
-	require_once EXTENSIONS.'/languages/lib/class.langfile.php';
+	require_once EXTENSIONS . '/languages/lib/class.langfile.php';
 
-
-
-	Final Class LangFileAll extends LangFile
-	{
+	Final Class LangFileAll extends LangFile {
 
 		private $cache = null;
 
@@ -20,12 +17,12 @@
 		 *
 		 * @return array - resulting languages
 		 */
-		public function listAll($keys = null){
-			if( $this->cache === null ){
-				if( $keys === null ){
+		public function listAll($keys = null) {
+			if ($this->cache === null) {
+				if ($keys === null) {
 					$keys = $this->allowed_keys;
 				}
-				elseif( !is_array($keys) ){
+				elseif (!is_array($keys)) {
 					$keys = array($keys);
 				}
 
@@ -34,17 +31,17 @@
 				$result = array();
 
 				$doc = new DOMDocument();
-				$doc->load( $this->getFile() );
+				$doc->load($this->getFile());
 				$xPath = new DOMXPath($doc);
 
-				foreach($xPath->query( "/languages/lang" ) as $lang){
+				foreach ($xPath->query("/languages/lang") as $lang) {
 					/** @var $lang DOMElement */
 
-					$r = array();
-					$code = $lang->getAttribute( 'code' );
+					$r    = array();
+					$code = $lang->getAttribute('code');
 
-					foreach( $keys as $key ){
-						$r[$key] = $xPath->query( $key, $lang )->item( 0 )->nodeValue;
+					foreach ($keys as $key) {
+						$r[$key] = $xPath->query($key, $lang)->item(0)->nodeValue;
 					}
 
 					$result[$code] = $r;
@@ -56,8 +53,7 @@
 			return $this->cache;
 		}
 
-		private function getFile(){
-			return EXTENSIONS.'/languages/resources/languages/languages.xml';
+		private function getFile() {
+			return EXTENSIONS . '/languages/resources/languages/languages.xml';
 		}
-
 	}

@@ -1,8 +1,6 @@
 <?php
 
-	Abstract Class LangFile
-	{
+	Abstract Class LangFile {
 
 		abstract public function listAll();
-
 	}

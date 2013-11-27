@@ -26,7 +26,7 @@
 	<xsl:template match="*" mode="lang">
 		<xsl:copy>
 			<xsl:for-each select="@*">
-			    <xsl:copy/>
+				<xsl:copy/>
 			</xsl:for-each>
 
 			<native-name>
@@ -63,7 +63,7 @@
 
 	<!-- Get English name -->
 	<xsl:template match="*" mode="langEnglishName">
-	    <xsl:value-of select="td[3]"/>
+		<xsl:value-of select="td[3]"/>
 	</xsl:template>
 
 	<!-- Get text direction -->

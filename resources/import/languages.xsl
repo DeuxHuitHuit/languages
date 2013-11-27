@@ -25,17 +25,17 @@
 
 		<languages>
 			<xsl:for-each select="$languages">
-			    <xsl:copy>
-			    	<xsl:for-each select="@*">
-			    	    <xsl:copy/>
-			    	</xsl:for-each>
+				<xsl:copy>
+					<xsl:for-each select="@*">
+						<xsl:copy/>
+					</xsl:for-each>
 
-				    <name>
-					    <xsl:value-of select="native-name"/>
-				    </name>
+					<name>
+						<xsl:value-of select="native-name"/>
+					</name>
 
-				    <xsl:copy-of select="*[ name() != 'native-name' and name() != 'english-name' ]"/>
-			    </xsl:copy>
+					<xsl:copy-of select="*[ name() != 'native-name' and name() != 'english-name' ]"/>
+				</xsl:copy>
 			</xsl:for-each>
 		</languages>
 	</xsl:template>

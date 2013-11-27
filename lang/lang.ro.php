@@ -1,10 +1,10 @@
 <?php
 
 	$about = array(
-		'name' => 'Romana',
-		'author' => array(
-			'name' => 'Vlad Ghita',
-			'email' => 'vlad.ghita@xandergroup.ro',
+		'name'         => 'Romana',
+		'author'       => array(
+			'name'    => 'Vlad Ghita',
+			'email'   => 'vlad.ghita@xandergroup.ro',
 			'website' => 'http://www.xanderadvertising.com'
 		),
 		'release-date' => '2012-06-22'
@@ -17,16 +17,13 @@
 
 		// Missing
 
-		'Values' => 
+		'Values'       =>
 		'Valori',
-
-		'%s Internal' => 
+		'%s Internal'  =>
 		'%s Intern',
-
-		'%s External' => 
+		'%s External'  =>
 		'%s Extern',
-
-		'Invalid URI.' => 
+		'Invalid URI.' =>
 		'URI invalid',
 
 	);
