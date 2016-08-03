@@ -21,10 +21,10 @@
 			$this->_required = 'yes';
 		}
 
-        	public function canFilter()
-        	{
-            	return true;
-        	}
+			public function canFilter()
+			{
+				return true;
+			}
 
 		/*------------------------------------------------------------------------------------------------*/
 		/*  Settings  */
@@ -62,7 +62,7 @@
 			$this->_settings[$setting] = $value;
 		}
 
-		public function displaySettingsPanel(&$wrapper, $errors = null) {
+		public function displaySettingsPanel(XMLElement &$wrapper, $errors = null) {
 			parent::displaySettingsPanel($wrapper, $errors);
 
 			$available_codes = $this->get('available_codes');
@@ -129,7 +129,7 @@
 		/*  Publish  */
 		/*------------------------------------------------------------------------------------------------*/
 
-		public function displayPublishPanel(XMLElement &$wrapper, $data = null, $flagWithError = null, $prefix = null, $postfix = null) {
+		public function displayPublishPanel(XMLElement &$wrapper, $data = null, $flagWithError = null, $fieldnamePrefix = null, $fieldnamePostfix = null, $entry_id = NULL) {
 			$selected = isset($data['value']) ? $data['value'] : array();
 			if (!is_array($selected)) {
 				$selected = array_map('trim', explode(',', $selected));
