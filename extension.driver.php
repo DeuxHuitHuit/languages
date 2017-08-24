@@ -24,7 +24,7 @@
 					`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
 					`field_id` INT(11) UNSIGNED NOT NULL,
 					`available_codes` VARCHAR(255) NULL,
-					`allow_multiple_selection` enum('yes','no') NOT NULL default 'no',
+					`allow_multiple_selection` ENUM('yes','no') NOT NULL default 'no',
 					PRIMARY KEY (`id`),
 					KEY `field_id` (`field_id`)
 				) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;",
