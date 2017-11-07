@@ -22,6 +22,9 @@
 		</author>
 	</authors>
 	<releases>
+		<release version="1.2.2" date="2016-08-03" min="2.3.4" max="2.x.x"><![CDATA[
+			* Updated compatibility PHP 7
+		]]></release>		
 		<release version="1.2.1" date="2016-03-20" min="2.3.4" max="2.x.x"><![CDATA[
 			* Updated compatibility infos
 		]]></release>
