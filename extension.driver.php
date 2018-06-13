@@ -19,28 +19,41 @@
 		/*------------------------------------------------------------------------------------------------*/
 
 		public function install() {
-			return Symphony::Database()->query(sprintf(
-				"CREATE TABLE `%s` (
-					`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
-					`field_id` INT(11) UNSIGNED NOT NULL,
-					`available_codes` VARCHAR(255) NULL,
-					`allow_multiple_selection` ENUM('yes','no') NOT NULL default 'no',
-					PRIMARY KEY (`id`),
-					KEY `field_id` (`field_id`)
-				) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;",
-				$this->field_table
-			));
+			return Symphony::Database()
+				->create($this->field_table)
+				->ifNotExists()
+				->charset('utf8')
+				->collate('utf8_unicode_ci')
+				->fields([
+					'id' => [
+						'type' => 'int(11)',
+						'auto' => true,
+					],
+					'field_id' => 'int(11)',
+					'available_codes' => [
+						'type' => 'varchar(255)',
+						'null' => true,
+					],
+					'allow_multiple_selection' => [
+						'type' => 'enum',
+						'values' => ['yes','no'],
+						'default' => 'no'
+					],
+				])
+				->keys([
+					'id' => 'primary',
+					'field_id' => 'key',
+				])
+				->execute()
+				->success();
 		}
 
 		public function uninstall() {
-			try {
-				Symphony::Database()->query(sprintf(
-					"DROP TABLE `%s`",
-					$this->field_table
-				));
-			} catch (DatabaseException $dbe) {
-				// table doesn't exist
-			}
+			return Symphony::Database()
+				->drop($this->field_table)
+				->ifExists()
+				->execute()
+				->success();
 		}
 
 

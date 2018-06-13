@@ -118,9 +118,18 @@
 			$fields['available_codes']          = empty($available_codes) ? '' : implode(',', $available_codes);
 			$fields['allow_multiple_selection'] = $this->get('allow_multiple_selection') ? $this->get('allow_multiple_selection') : 'no';
 
-			Symphony::Database()->query("DELETE FROM `tbl_fields_{$handle}` WHERE `field_id` = '{$id}' LIMIT 1");
+			Symphony::Database()
+				->delete('tbl_fields_' . $handle)
+				->where(['field_id' => $id])
+				->limit(1)
+				->execute()
+				->success();
 
-			return Symphony::Database()->insert($fields, "tbl_fields_{$handle}");
+			return Symphony::Database()
+				->insert('tbl_fields_' . $handle)
+				->values($fields)
+				->execute()
+				->success();
 		}
 
 
