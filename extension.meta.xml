@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extension id="languages" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
-	<name>Languages</name>
+	<name>Field: Languages</name>
 	<description>Offers languages support.</description>
 	<repo type="github">https://github.com/DeuxHuitHuit/languages</repo>
 	<types>
