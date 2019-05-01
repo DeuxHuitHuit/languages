@@ -118,9 +118,18 @@
 			$fields['available_codes']          = empty($available_codes) ? '' : implode(',', $available_codes);
 			$fields['allow_multiple_selection'] = $this->get('allow_multiple_selection') ? $this->get('allow_multiple_selection') : 'no';
 
-			Symphony::Database()->query("DELETE FROM `tbl_fields_{$handle}` WHERE `field_id` = '{$id}' LIMIT 1");
+			Symphony::Database()
+				->delete('tbl_fields_' . $handle)
+				->where(['field_id' => $id])
+				->limit(1)
+				->execute()
+				->success();
 
-			return Symphony::Database()->insert($fields, "tbl_fields_{$handle}");
+			return Symphony::Database()
+				->insert('tbl_fields_' . $handle)
+				->values($fields)
+				->execute()
+				->success();
 		}
 
 
@@ -129,7 +138,7 @@
 		/*  Publish  */
 		/*------------------------------------------------------------------------------------------------*/
 
-		public function displayPublishPanel(XMLElement &$wrapper, $data = null, $flagWithError = null, $fieldnamePrefix = null, $fieldnamePostfix = null, $entry_id = NULL) {
+		public function displayPublishPanel(XMLElement &$wrapper, $data = null, $flagWithError = null, $fieldnamePrefix = null, $fieldnamePostfix = null, $entry_id = null) {
 			$selected = isset($data['value']) ? $data['value'] : array();
 			if (!is_array($selected)) {
 				$selected = array_map('trim', explode(',', $selected));
@@ -145,7 +154,7 @@
 				}
 			}
 
-			$fieldname = 'fields' . $prefix . '[' . $this->get('element_name') . ']' . $postfix;
+			$fieldname = 'fields' . $fieldnamePrefix . '[' . $this->get('element_name') . ']' . $fieldnamePostfix;
 			if ($this->get('allow_multiple_selection') == 'yes') {
 				$fieldname .= '[]';
 			}
